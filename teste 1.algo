@@ -1,0 +1,59 @@
+PROCEDUR dot_product(v1,v2: ARRAY_OF INTEGER,dot:INTEGER)
+VAR
+    i:INTEGER
+BEGIN
+    dot:=0
+    IF(v1.length<>v2.lenhth)) THEN
+        wtite ("les deus vecteures nonpas le mmeme longeurs")
+        dot:=null
+    END_IF
+    FOR i FROM  TO v1.length STEP step  DO 
+    dot:=dot+(v1[i]*v[i])      
+        END_FOR
+END
+FUNCTION dot_product(v1,v2) : INTEGER
+VAR
+    i,dot:INTEGER
+BEGIN
+dot:=0
+    IF(v1.length<>v2.lenhth) THEN
+        wtite ("les deus vecteures nonpas le mmeme longeurs")
+        dot:=null
+    END_IF
+    FOR i FROM  TO v1.length STEP step  DO 
+    dot:=dot+(v1[i]*v[i])      
+        END_FOR
+
+    return dot ;INTEGER
+    
+END
+ALGORITHM dot-prduct
+VAR
+    v1,v2: ARRAY_OF INTEGER
+    i,dot :INTEGER
+BEGIN
+    read(v1)
+    read(v2)
+    dot_product(v1,v2,dot)
+    IF (dot=0) THEN
+        write("les deux vectourielles sont orthogonaux")
+    ELSE
+        write("les deux vectourielles  ne sont pas orthogonaux")
+    END_IF
+END
+ALGORITHM dot-prduct
+VAR
+    v1,v2: ARRAY_OF INTEGER
+    i,dot :INTEGER
+BEGIN
+    read(v1)
+    read(v2)
+    dot_product(v1,v2)
+    IF (dot=0) THEN
+        write("les deux vectourielles sont orthogonaux")
+    ELSE
+        write("les deux vectourielles  ne sont pas orthogonaux")
+    END_IF
+END
+
+
